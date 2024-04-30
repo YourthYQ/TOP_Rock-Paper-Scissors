@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"></head>
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+<body>
+
+    <!-- program starts here, which prompt the prompt() function to ask for the total rounds -->
+    <script>
+        countOfRound();
+    </script>
+
+    <!-- header -->
+    <header class="header">
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <!-- main content -->
+    <div class="square">
+        <div id="result">
+            <h2 id="rounds">Choose your weapon</h2>
+            <p id="rules"></p>
+        </div>
+        <div class="weapons">
+            <button id="rock" onclick="playGame(`rock`)"><img src="icons/rock.png"></button>
+            <button id="paper" onclick="playGame(`paper`)"><img src="icons/paper.png"></button>
+            <button id="scissor" onclick="playGame(`scissor`)"><img src="icons/scissor.png"></button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p class="footer">
+            Copyright © 2024 YourthYQ
+        </p>
+        <a href="https://github.com/YourthYQ" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </footer>
+
+    <!-- script imported here, adding event listener -->
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', countOfRound);
+    </script>
+    
+</body>
+</html>
